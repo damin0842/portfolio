@@ -267,6 +267,7 @@
       transform: translate(-50%, -50%);
       text-align: center;
       font-size: 0;
+      z-index: 1;
     }
 
     .sec1_text5 img {
@@ -311,7 +312,26 @@
       height: 100%;
       object-fit: cover;
     }
-
+    .t5_title{
+      font-size: 9vw;
+      line-height: 0.8;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      display: flex;
+    }
+    .t5_title span{
+      margin: 0 15vw;
+    }
+    .t5_title span p{
+      width: 8vw;
+      font-size: 2vw;
+      color: #fff;
+      border: 1px solid;
+      border-radius: 3vw;
+      padding: 1vh 1.5vw;
+      margin: 4vh 7vw;
+    }
     .sec1_text6 {
       width: 100vw;
       left: 50%;
@@ -324,9 +344,27 @@
     .sec1_text6 img {
       width: 100%;
       height: 100%;
-
+      
     }
-
+    .t6__title{
+      font-size: 11vw;
+      line-height: 0.8;
+      text-transform: uppercase;
+      font-family: "Tungsten";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      margin-top: 12vh;
+    }
+    .t6__title span{
+      font-size: 2vw;
+      color: #fff;
+      border: 1px solid;
+      border-radius: 3vw;
+      padding: 0.3vh 3vw;
+      margin: 0 7vw;
+    }
  
   </style>
 </head>
@@ -454,7 +492,11 @@
           </div>
         </div>
 
-        <div class="sec1_text4 fixed" data-15000="opacity:0;" data-17000="opacity:1;">
+        <div class="sec1_text4 fixed"
+        data-20000="z-index:0"
+        data-20001="z-index:-10"
+        
+        >
           <img src="./assets/img/bd6655c.jpg" alt="">
           <div class="t4__title">
             <span style="color: #d33d00;">TO FIGHT</span>
@@ -466,8 +508,7 @@
           </div>
         </div>
 
-        <div class="sec1_text5 fixed" data-18000="opacity:0;" data-20000="opacity:1;">
-          <img src="./assets/img/bd6655c.jpg" alt="">
+        <div class="sec1_text5 fixed" >
           <div class="t5__inner">
             <div class="left">
               <img class="imgl1" src="./assets/img/t4l1.jpg" alt=""
@@ -481,27 +522,50 @@
            >
               <img class="imgl3" src="./assets/img/t4l1.jpg" alt=""
            >
-              <span style="color: #fff">SURVIVE <br>
-                TRAINING </span>
+        
             </div>
             <div class="right">
               <img src="./assets/img/t4r1.jpg" alt=""
+              
               data-19000="transform:translate(200%,0%)"
               data-20000="transform:translate(0%,0%)"
               data-21000="transform:translate(0%,0%)"
               data-22000="transform:translate(200%,0%)">
               <img src="./assets/img/t4r1.jpg" alt="">
               <img src="./assets/img/t4r1.jpg" alt="">
+     
+            </div>
+            <div class="t5_title" 
+              data-19500="transform:translate(-50%,200%)"
+              data-20000="transform:translate(-50%,20%)"
+              data-21000="transform:translate(-50%,20%)"
+              data-21500="transform:translate(-50%,200%)"
+
+            >
               <span style="color: #d33d00">BATTLE <br>
-                PRACTICE</span>
+                PRACTICE
+              <p>show more</p>
+              </span>
+                <span style="color: #fff">SURVIVE <br>
+                  TRAINING 
+                  <p>show more</p>
+                </span>
             </div>
           </div>
         </div>
 
 
-        <div class="sec1_text6 fixed" data-21000="opacity:0;" data-22000="opacity:1;">
+        <div class="sec1_text6 fixed" data-20000="z-index:-1;" data-20001="z-index:0;">
           <img src="./assets/img/t6you.jpg" alt="">
-     
+          <div class="t6__title">
+            <p style="color: #fff;">
+              YOUTUBE <br>
+              REACT <br>
+              WORK
+            </p>
+            <span>web</span>
+            <span>detail</span>
+          </div>
         </div>
 
 
