@@ -258,9 +258,37 @@
       transform: translate(-50%, -50%);
     }
     .card__set img{
-      width: 450px;
-      height: 300px;
-      object-fit: contain;
+      width: 300px;
+      height: 450px;
+      object-fit: cover;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+
+    }
+    .card__set img:nth-child(1) { 
+      transform: translate(-50%, -50%) rotate(40deg)
+    }
+    .card__set img:nth-child(2) { 
+      transform: translate(-50%, -50%) rotate(30deg)
+    }
+    .card__set img:nth-child(3) { 
+      transform: translate(-50%, -50%) rotate(20deg)
+    }
+    .card__set img:nth-child(4) { 
+      transform: translate(-50%, -50%) rotate(10deg)
+    }
+    .card__set img:nth-child(5) { 
+      transform: translate(-50%, -50%) rotate(0)
+    }
+    .card__set img:nth-child(6) { 
+      transform: translate(-50%, -50%) rotate(-10deg)
+    }
+    .card__set img:nth-child(7) { 
+      transform: translate(-50%, -50%) rotate(-20deg)
+    }
+    .card__set img:nth-child(8) { 
+      transform: translate(-50%, -50%) rotate(-30deg)
     }
 
 
