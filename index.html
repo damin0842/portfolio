@@ -5,52 +5,63 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link href="https://webfontworld.github.io/earlyfont/EF_Macho.css" rel="stylesheet" />
-  <style>
+  <title>portfolio 01</title>
+  
+    <!-- seo 포폴때 참고 -->
+    <meta name="author" content="codi">
+    <meta name="description" content="사이트 만들기 연습해보기!">
+    <meta name="keyword" content="사이트, 만들기, 튜토리얼, 웹스토리보이">
+    <meta name="robots" content="all">
 
-    .scrollTop {
-      position: fixed;
-      left: 10px;
-      top: 10px;
-      width: 40px;
-      height: 40px;
-      background: rgba(0, 0, 0, 0.3);
-      text-align: center;
-      line-height: 40px;
-      z-index: 1000;
-      font-weight: 800;
-      color: #fff;
-    }
 
- 
-  </style>
+    <!-- ICON -->
+    <link rel="icon" href="assets/img/icon.png" />
+    <link rel="shortcut icon" href="assets/img/icon.png" />
+
+
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <!-- 공통 -->
+
 </head>
-
 <body>
+  <header>
 
+  </header>
+  
+  <section id="section1">
+      <div class="sec1_text1 fixed"
+      data-0="transform: translate(-35%, -50%);"
+      data-1000="transform: translate(-50%, -50%);">
+        <span>
+          <i>f</i><em
+          data-0="opacity:1;"
+          data-1000="opacity:0;">ront</em><i>e</i><em
+          data-0="opacity:1; "
+          data-1000="opacity:0;">nd</em>
+        </span>
+        <span
+        data-0="opacity:0;"
+        data-1000="opacity:1;">
+          developer
+        </span>
+      
 
- 
-
+      </div>
+  </section>
+  <div class="scrollTop">0</div>
   <script src="https://cdn.jsdelivr.net/npm/skrollr@0.6.26/dist/skrollr.min.js"></script>
   <script>
     let s = skrollr.init();
-    //재귀함수
-
     function scroll() {
       let scrollTop =
         window.pageYOffset || document.documentElement.scrollTop;
-
       document.querySelector(".scrollTop").innerText = Math.ceil(scrollTop);
-
-      //document.querySelector(".sec1_text1").style.marginLeft = scrollTop + "px";
-
       requestAnimationFrame(scroll);
     }
     scroll();
-  </script>
-  <script>
-
   </script>
 </body>
 

@@ -1,0 +1,44 @@
+.scrollTop {
+  position: fixed;
+  left: 10px;
+  top: 10px;
+  width: 40px;
+  height: 40px;
+  background: rgba(0, 0, 0, 0.3);
+  text-align: center;
+  line-height: 40px;
+  z-index: 1000;
+  font-weight: 800;
+  color: #fff;
+}
+.fixed {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+#section1 {
+  background: #000;
+  height: 29000px;
+}
+.sec1_text1 {
+  color: var(--orange);
+  text-transform: uppercase;
+  font-size: 0;
+  text-align: center;
+  line-height: 0.8;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  span {
+    display: inline-block;
+    font-size: 10vw;
+    em {
+      color: #fff;
+    }
+    i {
+      color: #fff;
+    }
+  }
+}
