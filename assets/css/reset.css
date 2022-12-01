@@ -3,7 +3,7 @@
 @import url("https://webfontworld.github.io/gmarket/GmarketSans.css");
 @font-face {
   font-family: "Tungsten";
-  src: local("Tungsten Narrow Black"), local("Tungsten-Narrow-Black"), url("./assets/fonts/TungstenNarrow-Black.woff2") format("woff2"), url("./assets/fonts/TungstenNarrow-Black.woff") format("woff"), url("./assets/fonts/TungstenNarrow-Black.ttf") format("truetype");
+  src: local("Tungsten Narrow Black"), local("Tungsten-Narrow-Black"), url("../fonts/TungstenNarrow-Black.woff2") format("woff2"), url("../fonts/TungstenNarrow-Black.woff") format("woff"), url("../fonts/TungstenNarrow-Black.ttf") format("truetype");
   font-weight: 900;
   font-style: normal;
 }
@@ -124,4 +124,4 @@ strong {
 img {
   vertical-align: top;
   width: 100%;
-}/*# sourceMappingURL=reset.css.map */
+}
