@@ -108,8 +108,6 @@
 
 .sec1_text3 {
   width: 100vw;
-  left: 50%;
-  top: 50%;
   z-index: 100;
 }
 .sec1_text3 img {
@@ -154,4 +152,12 @@
 }
 .sec1_text3 .text3_link > div:hover p {
   opacity: 1;
+}
+
+.sec_text4 {
+  width: 100vw;
+  height: 100%;
+  background-image: url(../img/bd6655c.jpg);
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=index.css.map */

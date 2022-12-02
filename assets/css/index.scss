@@ -119,8 +119,6 @@
 
 .sec1_text3 {
 	width: 100vw;
-	left: 50%;
-	top: 50%;
 	z-index: 100;
 
 	img {
@@ -172,4 +170,11 @@
 			}
 		}
 	}
+}
+
+.sec_text4 {
+	width: 100vw;
+	height: 100%;
+	background-image: url(../img/bd6655c.jpg);
+	object-fit: cover;
 }
