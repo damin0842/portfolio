@@ -64,23 +64,24 @@
 
 .sec1_text2 {
 	width: 100vw;
-	height: 100vh;
+	height: 100%;
 
 	.text2_camera {
 		width: 100%;
 		height: 100%;
-		position: absolute;
+		position: fixed;
 
 		img {
 			width: 100%;
 			height: 100%;
-			object-fit: cover;
+			//object-fit: cover;
 		}
 
 		.text2_frame {
+
 			position: absolute;
-			width: 192px;
-			height: 141px;
+			width: 10vw;
+			height: 14.2vh;
 			top: 50%;
 			left: 50%;
 			background-image: url(../img/sec1bg1_tv.jpg);
@@ -88,19 +89,24 @@
 			background-position: center;
 			opacity: 1;
 			border-radius: 10px;
-			transform: translate(-45%, 149%) rotateZ(-0.2deg);
+			transform: translate(-4.47vw, 147%) rotateZ(-0.3deg);
 			overflow: hidden;
+
+			&::after {
+				content: url(https://klevinskaitej.files.wordpress.com/2012/11/noise1.gif);
+				opacity: 0.07;
+			}
 
 			.text2_ment {
 				position: absolute;
-				width: 200px;
+				width: 10vw;
 				height: 500px;
 				top: 50%;
 				left: 50%;
 
 				h2 {
 					font-size: 6px;
-					color: #fff;
+					color: rgba(255, 255, 255, 0.7);
 					font-family: var(--font-sub1);
 					margin: 0 0.4vw;
 					line-height: 2;
@@ -114,57 +120,55 @@
 	width: 100vw;
 	left: 50%;
 	top: 50%;
-	transform: translate(-50%, -50%);
 	z-index: 100;
-}
 
-.sec1_text3 img {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-}
+	img {
+		width: 100%;
+		height: 100%;
+		//object-fit: cover;
+	}
 
-.text3_link {
-	transition: all 0.5s ease-in-out;
-	position: absolute;
-	font-size: 10vw;
-	top: 5VH;
-	color: #fff;
-	line-height: 0.8;
-}
+	.text3_link {
+		transition: all 0.5s ease-in-out;
+		position: absolute;
+		font-size: 10vw;
+		top: 5vh;
+		color: #fff;
+		line-height: 0.8;
 
-.text3_link>div {
-	width: 100vw;
-	display: flex;
-	position: relative;
+		>div {
+			width: 100vw;
+			display: flex;
+			position: relative;
 
-}
+			h2 {
+				font-size: 10vw;
+				text-indent: 1vw;
+				cursor: pointer;
+			}
 
-.text3_link>div:hover {
-	background-color: rgba(0, 0, 0, 0.5);
-}
+			p {
+				transition: all 0.3s ease;
+				opacity: 0;
+				font-family: 'GmarketSans';
+				font-weight: 300;
+				font-size: 1.6vw;
+				position: absolute;
+				bottom: 1vw;
+				right: 1vw;
+			}
 
-.text3_link>div h2 {
-	font-size: 10vw;
-	text-indent: 1vw;
-	cursor: pointer;
-}
+			&:hover {
+				background-color: rgba(0, 0, 0, 0.5);
+			}
 
-.text3_link>div:hover h2 {
-	color: #d33d00;
-}
+			&:hover h2 {
+				color: #d33d00;
+			}
 
-.text3_link>div p {
-	transition: all 0.3s ease;
-	opacity: 0;
-	font-family: 'GmarketSans';
-	font-weight: 300;
-	font-size: 1.6vw;
-	position: absolute;
-	bottom: 1vw;
-	right: 1vw;
-}
-
-.text3_link>div:hover p {
-	opacity: 1;
+			&:hover p {
+				opacity: 1;
+			}
+		}
+	}
 }

@@ -45,6 +45,17 @@ html {
   text-size-adjust: 100%;
 }
 
+
+body {
+  min-height: 100vh;
+  /* mobile viewport bug fix */
+  min-height: -webkit-fill-available;
+}
+
+html {
+  height: -webkit-fill-available;
+}
+
 //공백 초기화
 body,
 button,
@@ -134,18 +145,22 @@ h5,
 h6 {
   font-weight: normal;
 }
+
 ul {
   list-style: none;
 }
+
 span,
 em,
 i,
 address {
   font-style: normal;
 }
+
 strong {
   font-weight: normal;
 }
+
 img {
   vertical-align: top;
   width: 100%;
