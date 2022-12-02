@@ -30,13 +30,12 @@
   font-size: 0;
   text-align: center;
   line-height: 0.8;
-  width: 100%;
   z-index: 2;
-  background: transparent;
+  width: 69vw;
 }
 .sec1_text1 span {
-  display: inline;
-  font-size: 10vw;
+  display: inline-block;
+  font-size: 20vw;
 }
 .sec1_text1 span em {
   display: inline-block;
@@ -46,6 +45,7 @@
   display: inline-block;
   color: #fff;
 }
+
 .sec1_video1 {
   z-index: 1;
   width: 100%;
@@ -63,34 +63,101 @@
   width: 100vw;
   height: 100vh;
 }
-
-.sec1_text2 > div {
+.sec1_text2 .text2_camera {
   width: 100%;
   height: 100%;
   position: absolute;
 }
+.sec1_text2 .text2_camera img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.sec1_text2 .text2_camera .text2_frame {
+  position: absolute;
+  width: 192px;
+  height: 141px;
+  top: 50%;
+  left: 50%;
+  background-image: url(../img/sec1bg1_tv.jpg);
+  background-size: cover;
+  background-position: center;
+  opacity: 1;
+  border-radius: 10px;
+  transform: translate(-45%, 149%) rotateZ(-0.2deg);
+  overflow: hidden;
+}
+.sec1_text2 .text2_camera .text2_frame .text2_ment {
+  position: absolute;
+  width: 200px;
+  height: 500px;
+  top: 50%;
+  left: 50%;
+}
+.sec1_text2 .text2_camera .text2_frame .text2_ment h2 {
+  font-size: 6px;
+  color: #fff;
+  font-family: var(--font-sub1);
+  margin: 0 0.4vw;
+  line-height: 2;
+}
 
-.sec1_text2 > div img {
+.sec1_text3 {
+  width: 100vw;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+}
+
+.sec1_text3 img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.sec1_text2 > div .ment {
+.text3_link {
+  transition: all 0.5s ease-in-out;
   position: absolute;
-  width: 200px;
-  height: 500px;
-  top: 50%;
-  left: 50%;
-  background: rgba(0, 0, 0, 0.651);
-  transform: translate(-45%, 70%);
+  font-size: 10vw;
+  top: 5VH;
+  color: #fff;
+  line-height: 0.8;
 }
 
-.sec1_text2 > div .ment h2 {
-  font-size: 6px;
-  color: #fff;
-  font-family: "NexonLv2Gothic";
-  margin: 0 0.4vw;
-  line-height: 2;
+.text3_link > div {
+  width: 100vw;
+  display: flex;
+  position: relative;
+}
+
+.text3_link > div:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.text3_link > div h2 {
+  font-size: 10vw;
+  text-indent: 1vw;
+  cursor: pointer;
+}
+
+.text3_link > div:hover h2 {
+  color: #d33d00;
+}
+
+.text3_link > div p {
+  transition: all 0.3s ease;
+  opacity: 0;
+  font-family: "GmarketSans";
+  font-weight: 300;
+  font-size: 1.6vw;
+  position: absolute;
+  bottom: 1vw;
+  right: 1vw;
+}
+
+.text3_link > div:hover p {
+  opacity: 1;
 }/*# sourceMappingURL=index.css.map */
