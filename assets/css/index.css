@@ -154,10 +154,78 @@
   opacity: 1;
 }
 
-.sec_text4 {
+.sec1_text4 {
   width: 100vw;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 0;
+  opacity: 0;
+}
+
+.sec1_text4 img {
+  width: 100%;
   height: 100%;
-  background-image: url(../img/bd6655c.jpg);
+}
+
+.sec1_text4 .t4__title {
+  font-size: 20vw;
+  line-height: 0.8;
+  color: #d33d00;
+  text-transform: uppercase;
+  font-family: "Tungsten";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card__set {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card__set img {
+  width: 300px;
+  height: 450px;
   -o-object-fit: cover;
      object-fit: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.card__set img:nth-child(1) {
+  transform: translate(-50%, -50%) rotate(40deg);
+}
+
+.card__set img:nth-child(2) {
+  transform: translate(-50%, -50%) rotate(30deg);
+}
+
+.card__set img:nth-child(3) {
+  transform: translate(-50%, -50%) rotate(20deg);
+}
+
+.card__set img:nth-child(4) {
+  transform: translate(-50%, -50%) rotate(10deg);
+}
+
+.card__set img:nth-child(5) {
+  transform: translate(-50%, -50%) rotate(0);
+}
+
+.card__set img:nth-child(6) {
+  transform: translate(-50%, -50%) rotate(-10deg);
+}
+
+.card__set img:nth-child(7) {
+  transform: translate(-50%, -50%) rotate(-20deg);
+}
+
+.card__set img:nth-child(8) {
+  transform: translate(-50%, -50%) rotate(-30deg);
 }/*# sourceMappingURL=index.css.map */
