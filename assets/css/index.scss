@@ -134,11 +134,8 @@ $split-color: #fff;
 .sec1_text3 {
 	width: 100vw;
 	z-index: 100;
-
 	transform-style: preserve-3d;
 	transform: perspective($perspective);
-
-
 
 	img {
 		width: 100%;
@@ -158,47 +155,11 @@ $split-color: #fff;
 			position: relative;
 			color: transparent;
 			cursor: pointer;
-
-			// === Split Line =====
-			&::before {
-				content: '';
-				display: block;
-				position: absolute;
-				top: $split-position;
-				left: -10%;
-				right: -10%;
-				height: $split-thickness;
-				border-radius: $split-thickness;
-				margin-top: -($split-thickness / 2);
-				background: $split-color;
-				transform: scale(0);
-				transition: transform .8s cubic-bezier(.16, 1.08, .38, .98);
-				z-index: 1;
-			}
-
-		}
-
-		.Menu-list-item:hover,
-		.Menu-list-item:active {
-
-			.Mask {
-				color: #d33d00;
-				transform: skewX(20deg) translateX(5vw);
-			}
-
-			.Mask+.Mask {
-				transform: skewX(20deg) translateX(-5vw);
-			}
-
-			&::before {
-				transform: scale(1);
-			}
-		}
-
-		>div {
 			width: 100vw;
 			display: flex;
 			position: relative;
+			font-size: 10vw;
+			text-indent: 1vw;
 
 			// === Top/bottom Mask =====
 			.Mask {
@@ -225,13 +186,6 @@ $split-color: #fff;
 				}
 			}
 
-
-			span {
-				font-size: 10vw;
-				text-indent: 1vw;
-				cursor: pointer;
-			}
-
 			p {
 				transition: all 0.3s ease;
 				opacity: 0;
@@ -246,10 +200,40 @@ $split-color: #fff;
 
 			&:hover {
 				background-color: rgba(0, 0, 0, 0.5);
+
+				.Mask {
+					color: #d33d00;
+					transform: skewX(20deg) translateX(5vw);
+				}
+
+				.Mask+.Mask {
+					transform: skewX(20deg) translateX(-5vw);
+				}
+
+				&::before {
+					transform: scale(1);
+				}
+
+				p {
+					opacity: 1;
+				}
 			}
 
-			&:hover p {
-				opacity: 1;
+			// === Split Line =====
+			&::before {
+				content: '';
+				display: block;
+				position: absolute;
+				top: $split-position;
+				left: -10%;
+				right: -10%;
+				height: 1px;
+				border-radius: $split-thickness;
+				margin-top: -($split-thickness / 2);
+				background: $split-color;
+				transform: scale(0);
+				transition: transform .8s cubic-bezier(.16, 1.08, .38, .98);
+				z-index: 1;
 			}
 		}
 	}
