@@ -114,6 +114,8 @@
 .sec1_text3 {
   width: 100vw;
   z-index: 100;
+  transform-style: preserve-3d;
+  transform: perspective(60rem);
 }
 .sec1_text3 img {
   width: 100%;
@@ -129,12 +131,25 @@
   color: #fff;
   line-height: 0.8;
 }
+.sec1_text3 .text3_link .Menu-list-item:hover .Mask,
+.sec1_text3 .text3_link .Menu-list-item:active .Mask {
+  color: #FFF;
+  transform: skewX(12deg) translateX(5px);
+}
+.sec1_text3 .text3_link .Menu-list-item:hover .Mask + .Mask,
+.sec1_text3 .text3_link .Menu-list-item:active .Mask + .Mask {
+  transform: skewX(12deg) translateX(-5px);
+}
+.sec1_text3 .text3_link .Menu-list-item:hover::before,
+.sec1_text3 .text3_link .Menu-list-item:active::before {
+  transform: scale(1);
+}
 .sec1_text3 .text3_link > div {
   width: 100vw;
   display: flex;
   position: relative;
 }
-.sec1_text3 .text3_link > div .mask {
+.sec1_text3 .text3_link > div .Mask {
   display: block;
   position: absolute;
   overflow: hidden;
@@ -143,8 +158,15 @@
   height: 49%;
   transition: all 0.8s cubic-bezier(0.16, 1.08, 0.38, 0.98);
 }
-.sec1_text3 .text3_link > div .mask span {
+.sec1_text3 .text3_link > div .Mask span {
   display: block;
+}
+.sec1_text3 .text3_link > div .Mask + .Mask {
+  top: 48.9%;
+  height: 51.1%;
+}
+.sec1_text3 .text3_link > div .Mask + .Mask span {
+  transform: translateY(-49%);
 }
 .sec1_text3 .text3_link > div span {
   font-size: 10vw;

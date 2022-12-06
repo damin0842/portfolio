@@ -135,6 +135,11 @@ $split-color: #FF2C75;
 	width: 100vw;
 	z-index: 100;
 
+	transform-style: preserve-3d;
+	transform: perspective($perspective);
+
+
+
 	img {
 		width: 100%;
 		height: 100%;
@@ -149,13 +154,30 @@ $split-color: #FF2C75;
 		color: #fff;
 		line-height: 0.8;
 
+		.Menu-list-item:hover,
+		.Menu-list-item:active {
+
+			.Mask {
+				color: #FFF;
+				transform: skewX(12deg) translateX(5px);
+			}
+
+			.Mask+.Mask {
+				transform: skewX(12deg) translateX(-5px);
+			}
+
+			&::before {
+				transform: scale(1);
+			}
+		}
+
 		>div {
 			width: 100vw;
 			display: flex;
 			position: relative;
 
-			// === Top/bottom mask =====
-			.mask {
+			// === Top/bottom Mask =====
+			.Mask {
 				display: block;
 				position: absolute;
 				overflow: hidden;
@@ -168,6 +190,17 @@ $split-color: #FF2C75;
 					display: block;
 				}
 			}
+
+			// === Bottom Mask specific =====
+			.Mask+.Mask {
+				top: $split-position - 0.1;
+				height: 100 - $split-position + 0.1;
+
+				span {
+					transform: translateY(-$split-position);
+				}
+			}
+
 
 			span {
 				font-size: 10vw;
@@ -215,7 +248,6 @@ $split-color: #FF2C75;
 .sec1_text4 img {
 	width: 100%;
 	height: 100%;
-
 }
 
 .sec1_text4 .t4__title {
