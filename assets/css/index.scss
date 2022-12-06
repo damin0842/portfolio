@@ -140,49 +140,45 @@
 		font-size: 10vw;
 		top: 5vh;
 		color: #fff;
-		-webkit-text-stroke: 1px white;
 		line-height: 0.8;
-		overflow: hidden;
 
+		>div {
+			width: 100vw;
+			display: flex;
+			position: relative;
 
-		ul {
-			position: absolute;
-			top: 0;
-			left: 0;
-			list-style: none;
-			white-space: nowrap;
-			color: transparent;
-			-webkit-text-stroke: 1px white;
-
-			li {
+			h2 {
 				font-size: 10vw;
 				text-indent: 1vw;
 				cursor: pointer;
 			}
-		}
 
-		.con {
-			position: relative;
-			height: 70px;
-			overflow: hidden;
-			outline: 1px transparent;
-
-			.ul {
+			p {
+				transition: all 0.3s ease;
+				opacity: 0;
+				font-family: 'GmarketSans';
+				font-weight: 300;
+				font-size: 1.6vw;
 				position: absolute;
-				top: 0;
-				left: 0;
-				list-style: none;
-				white-space: nowrap;
+				bottom: 1vw;
+				right: 1vw;
+			}
 
-				li {
-					font-size: 10vw;
-					text-indent: 1vw;
-					cursor: pointer;
-				}
+			&:hover {
+				background-color: rgba(0, 0, 0, 0.5);
+			}
+
+			&:hover h2 {
+				color: #d33d00;
+			}
+
+			&:hover p {
+				opacity: 1;
 			}
 		}
 	}
 }
+
 
 .sec1_text4 {
 	width: 100vw;
