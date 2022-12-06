@@ -278,6 +278,12 @@ $split-color: #fff;
 	width: 100vw;
 	text-align: center;
 	font-size: 0;
+	background: url('../img/noise1.gif') center center;
+	background-color: rgba(0, 0, 0, 0.8);
+	background-blend-mode: multiply;
+	filter: blur(1px);
+
+
 
 	.t4__title {
 		text-align: left;
@@ -297,70 +303,71 @@ $split-color: #fff;
 	width: 100vw;
 	text-align: center;
 	font-size: 0;
+
+	img {
+		width: 100%;
+		height: 100%;
+	}
+
+	.t5__title {
+		font-size: 20vw;
+		line-height: 0.8;
+		color: #fff;
+		text-transform: uppercase;
+		font-family: "Tungsten";
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
 }
 
-.sec1_text5 img {
-	width: 100%;
-	height: 100%;
-}
 
-.sec1_text5 .t5__title {
-	font-size: 20vw;
-	line-height: 0.8;
-	color: #fff;
-	text-transform: uppercase;
-	font-family: "Tungsten";
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-}
 
 .card__set {
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-}
 
-.card__set img {
-	width: 300px;
-	height: 450px;
-	object-fit: cover;
-	position: absolute;
-	top: 50%;
-	left: 50%;
+	img {
+		width: 300px;
+		height: 450px;
+		object-fit: cover;
+		position: absolute;
+		top: 50%;
+		left: 50%;
 
-}
+		&:nth-child(1) {
+			transform: translate(-50%, -50%) rotate(40deg)
+		}
 
-.card__set img:nth-child(1) {
-	transform: translate(-50%, -50%) rotate(40deg)
-}
+		&:nth-child(2) {
+			transform: translate(-50%, -50%) rotate(30deg)
+		}
 
-.card__set img:nth-child(2) {
-	transform: translate(-50%, -50%) rotate(30deg)
-}
+		&:nth-child(3) {
+			transform: translate(-50%, -50%) rotate(20deg)
+		}
 
-.card__set img:nth-child(3) {
-	transform: translate(-50%, -50%) rotate(20deg)
-}
+		&:nth-child(4) {
+			transform: translate(-50%, -50%) rotate(10deg)
+		}
 
-.card__set img:nth-child(4) {
-	transform: translate(-50%, -50%) rotate(10deg)
-}
+		&:nth-child(5) {
+			transform: translate(-50%, -50%) rotate(0)
+		}
 
-.card__set img:nth-child(5) {
-	transform: translate(-50%, -50%) rotate(0)
-}
+		&:nth-child(6) {
+			transform: translate(-50%, -50%) rotate(-10deg)
+		}
 
-.card__set img:nth-child(6) {
-	transform: translate(-50%, -50%) rotate(-10deg)
-}
+		&:nth-child(7) {
+			transform: translate(-50%, -50%) rotate(-20deg)
+		}
 
-.card__set img:nth-child(7) {
-	transform: translate(-50%, -50%) rotate(-20deg)
-}
-
-.card__set img:nth-child(8) {
-	transform: translate(-50%, -50%) rotate(-30deg)
+		&:nth-child(8) {
+			transform: translate(-50%, -50%) rotate(-30deg)
+		}
+	}
 }
