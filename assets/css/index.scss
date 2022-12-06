@@ -129,7 +129,7 @@ $perspective: 60rem;
 $font-size: 4.25rem;
 $split-position: 49%;
 $split-thickness: 4px;
-$split-color: #FF2C75;
+$split-color: #fff;
 
 .sec1_text3 {
 	width: 100vw;
@@ -154,16 +154,22 @@ $split-color: #FF2C75;
 		color: #fff;
 		line-height: 0.8;
 
+		.Menu-list-item {
+			position: relative;
+			color: transparent;
+			cursor: pointer;
+		}
+
 		.Menu-list-item:hover,
 		.Menu-list-item:active {
 
 			.Mask {
-				color: #FFF;
-				transform: skewX(12deg) translateX(5px);
+				color: #d33d00;
+				transform: skewX(20deg) translateX(5vw);
 			}
 
 			.Mask+.Mask {
-				transform: skewX(12deg) translateX(-5px);
+				transform: skewX(20deg) translateX(-5vw);
 			}
 
 			&::before {
@@ -217,14 +223,11 @@ $split-color: #FF2C75;
 				position: absolute;
 				bottom: 1vw;
 				right: 1vw;
+				color: #fff;
 			}
 
 			&:hover {
 				background-color: rgba(0, 0, 0, 0.5);
-			}
-
-			&:hover span {
-				color: #d33d00;
 			}
 
 			&:hover p {

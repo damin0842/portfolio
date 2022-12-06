@@ -131,14 +131,19 @@
   color: #fff;
   line-height: 0.8;
 }
+.sec1_text3 .text3_link .Menu-list-item {
+  position: relative;
+  color: transparent;
+  cursor: pointer;
+}
 .sec1_text3 .text3_link .Menu-list-item:hover .Mask,
 .sec1_text3 .text3_link .Menu-list-item:active .Mask {
-  color: #FFF;
-  transform: skewX(12deg) translateX(5px);
+  color: #d33d00;
+  transform: skewX(20deg) translateX(5vw);
 }
 .sec1_text3 .text3_link .Menu-list-item:hover .Mask + .Mask,
 .sec1_text3 .text3_link .Menu-list-item:active .Mask + .Mask {
-  transform: skewX(12deg) translateX(-5px);
+  transform: skewX(20deg) translateX(-5vw);
 }
 .sec1_text3 .text3_link .Menu-list-item:hover::before,
 .sec1_text3 .text3_link .Menu-list-item:active::before {
@@ -153,7 +158,7 @@
   display: block;
   position: absolute;
   overflow: hidden;
-  color: #FF2C75;
+  color: #fff;
   top: 0;
   height: 49%;
   transition: all 0.8s cubic-bezier(0.16, 1.08, 0.38, 0.98);
@@ -182,12 +187,10 @@
   position: absolute;
   bottom: 1vw;
   right: 1vw;
+  color: #fff;
 }
 .sec1_text3 .text3_link > div:hover {
   background-color: rgba(0, 0, 0, 0.5);
-}
-.sec1_text3 .text3_link > div:hover span {
-  color: #d33d00;
 }
 .sec1_text3 .text3_link > div:hover p {
   opacity: 1;
