@@ -202,11 +202,11 @@ $split-color: #fff;
 
 				.Mask {
 					color: #d33d00;
-					transform: skewX(20deg) translateX(3.3vw);
+					transform: skewX(15deg) translateX(3.3vw);
 				}
 
 				.Mask+.Mask {
-					transform: skewX(20deg) translateX(2vw);
+					transform: skewX(15deg) translateX(2vw);
 				}
 
 				&::before {

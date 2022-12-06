@@ -176,10 +176,10 @@
 }
 .sec1_text3 .text3_link .Menu-list-item:hover .Mask {
   color: #d33d00;
-  transform: skewX(20deg) translateX(3.3vw);
+  transform: skewX(15deg) translateX(3.3vw);
 }
 .sec1_text3 .text3_link .Menu-list-item:hover .Mask + .Mask {
-  transform: skewX(20deg) translateX(2vw);
+  transform: skewX(15deg) translateX(2vw);
 }
 .sec1_text3 .text3_link .Menu-list-item:hover::before {
   transform: scale(1);
