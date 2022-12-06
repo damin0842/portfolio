@@ -136,6 +136,21 @@
   color: transparent;
   cursor: pointer;
 }
+.sec1_text3 .text3_link .Menu-list-item::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 49%;
+  left: -10%;
+  right: -10%;
+  height: 4px;
+  border-radius: 4px;
+  margin-top: -2px;
+  background: #fff;
+  transform: scale(0);
+  transition: transform 0.8s cubic-bezier(0.16, 1.08, 0.38, 0.98);
+  z-index: 1;
+}
 .sec1_text3 .text3_link .Menu-list-item:hover .Mask,
 .sec1_text3 .text3_link .Menu-list-item:active .Mask {
   color: #d33d00;

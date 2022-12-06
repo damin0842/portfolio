@@ -158,6 +158,24 @@ $split-color: #fff;
 			position: relative;
 			color: transparent;
 			cursor: pointer;
+
+			// === Split Line =====
+			&::before {
+				content: '';
+				display: block;
+				position: absolute;
+				top: $split-position;
+				left: -10%;
+				right: -10%;
+				height: $split-thickness;
+				border-radius: $split-thickness;
+				margin-top: -($split-thickness / 2);
+				background: $split-color;
+				transform: scale(0);
+				transition: transform .8s cubic-bezier(.16, 1.08, .38, .98);
+				z-index: 1;
+			}
+
 		}
 
 		.Menu-list-item:hover,
