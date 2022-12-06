@@ -29,7 +29,6 @@
 	text-transform: uppercase;
 	font-size: 0;
 	text-align: center;
-	line-height: 0.8;
 	z-index: 2;
 	width: 69vw;
 
@@ -104,13 +103,21 @@
 				height: 500px;
 				top: 50%;
 				left: 50%;
+				text-align: center;
 
 				h2 {
+
 					font-size: 6px;
 					color: rgba(255, 255, 255, 1);
 					font-family: var(--font-sub1);
-					margin: 0 0.4vw;
-					line-height: 2;
+					line-height: 1.8;
+				}
+
+				i {
+					font-family: 'UtoImageHand';
+					margin-right: 5px;
+					float: right;
+					font-size: 18px;
 				}
 			}
 		}
@@ -133,45 +140,49 @@
 		font-size: 10vw;
 		top: 5vh;
 		color: #fff;
+		-webkit-text-stroke: 1px white;
 		line-height: 0.8;
+		overflow: hidden;
 
-		>div {
-			width: 100vw;
-			display: flex;
-			position: relative;
 
-			h2 {
+		ul {
+			position: absolute;
+			top: 0;
+			left: 0;
+			list-style: none;
+			white-space: nowrap;
+			color: transparent;
+			-webkit-text-stroke: 1px white;
+
+			li {
 				font-size: 10vw;
 				text-indent: 1vw;
 				cursor: pointer;
 			}
+		}
 
-			p {
-				transition: all 0.3s ease;
-				opacity: 0;
-				font-family: 'GmarketSans';
-				font-weight: 300;
-				font-size: 1.6vw;
+		.con {
+			position: relative;
+			height: 70px;
+			overflow: hidden;
+			outline: 1px transparent;
+
+			.ul {
 				position: absolute;
-				bottom: 1vw;
-				right: 1vw;
-			}
+				top: 0;
+				left: 0;
+				list-style: none;
+				white-space: nowrap;
 
-			&:hover {
-				background-color: rgba(0, 0, 0, 0.5);
-			}
-
-			&:hover h2 {
-				color: #d33d00;
-			}
-
-			&:hover p {
-				opacity: 1;
+				li {
+					font-size: 10vw;
+					text-indent: 1vw;
+					cursor: pointer;
+				}
 			}
 		}
 	}
 }
-
 
 .sec1_text4 {
 	width: 100vw;

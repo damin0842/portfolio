@@ -1,6 +1,8 @@
 //변수 설정
 @import url("https://webfontworld.github.io/NexonLv2Gothic/NexonLv2Gothic.css");
 @import url("https://webfontworld.github.io/gmarket/GmarketSans.css");
+@import url('https://webfontworld.github.io/utoImageHand/UtoImageHand.css');
+
 
 @font-face {
   font-family: "Tungsten";
@@ -54,6 +56,12 @@ body {
 
 html {
   height: -webkit-fill-available;
+}
+
+
+// 스크롤 체이닝
+body {
+  overscroll-behavior: none;
 }
 
 //공백 초기화
