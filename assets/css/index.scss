@@ -124,6 +124,13 @@
 	}
 }
 
+// === Variables =====
+$perspective: 60rem;
+$font-size: 4.25rem;
+$split-position: 49%;
+$split-thickness: 4px;
+$split-color: #FF2C75;
+
 .sec1_text3 {
 	width: 100vw;
 	z-index: 100;
@@ -147,7 +154,22 @@
 			display: flex;
 			position: relative;
 
-			h2 {
+			// === Top/bottom mask =====
+			.mask {
+				display: block;
+				position: absolute;
+				overflow: hidden;
+				color: $split-color;
+				top: 0;
+				height: $split-position;
+				transition: all .8s cubic-bezier(.16, 1.08, .38, .98);
+
+				span {
+					display: block;
+				}
+			}
+
+			span {
 				font-size: 10vw;
 				text-indent: 1vw;
 				cursor: pointer;
@@ -168,7 +190,7 @@
 				background-color: rgba(0, 0, 0, 0.5);
 			}
 
-			&:hover h2 {
+			&:hover span {
 				color: #d33d00;
 			}
 

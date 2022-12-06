@@ -134,7 +134,19 @@
   display: flex;
   position: relative;
 }
-.sec1_text3 .text3_link > div h2 {
+.sec1_text3 .text3_link > div .mask {
+  display: block;
+  position: absolute;
+  overflow: hidden;
+  color: #FF2C75;
+  top: 0;
+  height: 49%;
+  transition: all 0.8s cubic-bezier(0.16, 1.08, 0.38, 0.98);
+}
+.sec1_text3 .text3_link > div .mask span {
+  display: block;
+}
+.sec1_text3 .text3_link > div span {
   font-size: 10vw;
   text-indent: 1vw;
   cursor: pointer;
@@ -152,7 +164,7 @@
 .sec1_text3 .text3_link > div:hover {
   background-color: rgba(0, 0, 0, 0.5);
 }
-.sec1_text3 .text3_link > div:hover h2 {
+.sec1_text3 .text3_link > div:hover span {
   color: #d33d00;
 }
 .sec1_text3 .text3_link > div:hover p {
