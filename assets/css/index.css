@@ -66,8 +66,8 @@
   overflow: hidden;
   color: #fff;
   border-right: 2px solid #fff;
-  -webkit-animation: typing 3s steps(31);
-          animation: typing 3s steps(31);
+  -webkit-animation: typing 2s steps(31);
+          animation: typing 2s steps(31);
 }
 @-webkit-keyframes typing {
   0% {
