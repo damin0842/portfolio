@@ -51,9 +51,9 @@
 	}
 
 	p {
-		font-family: 'NexonLv2Gothic';
+		font-family: 'GmarketSans';
 		bottom: 9vh;
-		right: 1vw;
+		right: -2.7vw;
 		position: absolute;
 		font-size: 1vw;
 		white-space: nowrap;
@@ -63,7 +63,7 @@
 
 
 		&::before {
-			content: "우리가 해야 할 일은 끊임없이 호기심을 갖고, 새로운 생각을 시험해보고 새로운 인상을 받는 것이다.";
+			content: "우리가 해야 할 일은 끊임없이 호기심을 갖고, 새로운 생각을 시험해보고 새로운 인상을 받는 것이다. ";
 			position: absolute;
 			top: 0;
 			left: 0;
