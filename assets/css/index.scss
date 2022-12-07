@@ -377,6 +377,7 @@ $split-color: #fff;
 }
 
 .card__set {
+	background-color: #d33d00;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -385,9 +386,11 @@ $split-color: #fff;
 	.card {
 		width: 300px;
 		height: 450px;
-		object-fit: cover;
 		background: rgba(0, 0, 0, 0.548);
-		position: relative;
 
+		svg {
+			width: 100%;
+			height: 100%;
+		}
 	}
 }
