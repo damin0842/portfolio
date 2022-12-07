@@ -31,6 +31,8 @@
 	text-align: center;
 	z-index: 2;
 	width: 69vw;
+	align-items: center;
+	justify-content: center;
 
 	span {
 		display: inline-block;
@@ -52,8 +54,8 @@
 
 	p {
 		font-family: 'GmarketSans';
-		bottom: 9vh;
-		right: -2.7vw;
+		bottom: 15%;
+		right: -4%;
 		position: absolute;
 		font-size: 1vw;
 		white-space: nowrap;
@@ -225,13 +227,13 @@ $split-color: #fff;
 			}
 
 			p {
-				transition: all 0.3s ease;
+				transition: all 1s cubic-bezier(.16, 1.08, .38, .98);
 				opacity: 0;
 				font-family: 'GmarketSans';
 				font-weight: 300;
 				font-size: 1.6vw;
 				position: absolute;
-				bottom: 1vw;
+				bottom: 22px;
 				right: 1vw;
 				color: #fff;
 			}
@@ -358,7 +360,7 @@ $split-color: #fff;
 
 		span:after {
 			border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #d33d00 #d33d00;
-			box-shadow: 25px 25px 25px rgba(46, 46, 49, .8);
+			box-shadow: 15px 15px 15px rgba(46, 46, 49, 0.479);
 		}
 
 		@keyframes tipsy {
