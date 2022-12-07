@@ -45,19 +45,19 @@
   display: inline-block;
   color: #fff;
 }
-.sec1_text1 span p {
+.sec1_text1 p {
   font-family: "NexonLv2Gothic";
   bottom: 9vh;
-  right: 0;
+  right: 1vw;
   position: absolute;
   font-size: 1vw;
   white-space: nowrap;
   margin: 0;
   position: fixed;
-  color: #000;
+  color: transparent;
 }
-.sec1_text1 span p::before {
-  content: "'배움에는 끝이 없다' 라는 말이 있듯이 공부도 100% 라는 완벽한 수치는 없다고 생각합니다.";
+.sec1_text1 p::before {
+  content: "우리가 해야 할 일은 끊임없이 호기심을 갖고, 새로운 생각을 시험해보고 새로운 인상을 받는 것이다.";
   position: absolute;
   top: 0;
   left: 0;
@@ -66,8 +66,8 @@
   overflow: hidden;
   color: #fff;
   border-right: 2px solid #fff;
-  -webkit-animation: typing 4s steps(31);
-          animation: typing 4s steps(31);
+  -webkit-animation: typing 3s steps(31);
+          animation: typing 3s steps(31);
 }
 @-webkit-keyframes typing {
   0% {
