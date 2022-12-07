@@ -386,51 +386,41 @@ $split-color: #fff;
 		position: absolute;
 		width: 250px;
 		height: 375px;
-		background: url(../img/card11.jpg) no-repeat center center /cover;
 		border-radius: 10px;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
+		opacity: 0.99;
+		border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 	}
 
 	.card1 {
 		background: url(../img/card11.jpg) no-repeat center center /cover;
-		transform: translate(-50%, -50%);
 	}
 
 	.card2 {
 		background: url(../img/card11.jpg) no-repeat center center /cover;
-		transform: translate(-40%, -50%);
 	}
 
 	.card3 {
 		background: url(../img/card11.jpg) no-repeat center center /cover;
-		transform: translate(-60%, -50%);
 	}
 
 	.card4 {
 		background: url(../img/card11.jpg) no-repeat center center /cover;
-		transform: translate(-50%, -30%);
 	}
 
 	.card5 {
 		background: url(../img/card11.jpg) no-repeat center center /cover;
-		transform: translate(-60%, -60%);
 	}
 
 	.card6 {
 		background: url(../img/card11.jpg) no-repeat center center /cover;
-		transform: translate(-70%, -70%);
 	}
 
 	.card7 {
 		background: url(../img/card11.jpg) no-repeat center center /cover;
-		transform: translate(-30%, -20%);
 	}
 
 	.card8 {
 		background: url(../img/card11.jpg) no-repeat center center /cover;
-		transform: translate(-0%, -40%);
 	}
 
 
