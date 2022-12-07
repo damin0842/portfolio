@@ -62,6 +62,7 @@
 		margin: 0;
 		position: fixed;
 		color: transparent;
+		transition: all 0.3s ease-out;
 
 
 		&::before {
@@ -381,44 +382,12 @@ $split-color: #fff;
 	left: 50%;
 	transform: translate(-50%, -50%);
 
-	img {
+	.card {
 		width: 300px;
 		height: 450px;
 		object-fit: cover;
-		position: absolute;
-		top: 50%;
-		left: 50%;
+		background: rgba(0, 0, 0, 0.548);
+		position: relative;
 
-		&:nth-child(1) {
-			transform: translate(-50%, -50%) rotate(40deg)
-		}
-
-		&:nth-child(2) {
-			transform: translate(-50%, -50%) rotate(30deg)
-		}
-
-		&:nth-child(3) {
-			transform: translate(-50%, -50%) rotate(20deg)
-		}
-
-		&:nth-child(4) {
-			transform: translate(-50%, -50%) rotate(10deg)
-		}
-
-		&:nth-child(5) {
-			transform: translate(-50%, -50%) rotate(0)
-		}
-
-		&:nth-child(6) {
-			transform: translate(-50%, -50%) rotate(-10deg)
-		}
-
-		&:nth-child(7) {
-			transform: translate(-50%, -50%) rotate(-20deg)
-		}
-
-		&:nth-child(8) {
-			transform: translate(-50%, -50%) rotate(-30deg)
-		}
 	}
 }

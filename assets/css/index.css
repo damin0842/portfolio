@@ -57,6 +57,7 @@
   margin: 0;
   position: fixed;
   color: transparent;
+  transition: all 0.3s ease-out;
 }
 .sec1_text1 p::before {
   content: "우리가 해야 할 일은 끊임없이 호기심을 갖고, 새로운 생각을 시험해보고 새로운 인상을 받는 것이다. ";
@@ -343,36 +344,11 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.card__set img {
+.card__set .card {
   width: 300px;
   height: 450px;
   -o-object-fit: cover;
      object-fit: cover;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-}
-.card__set img:nth-child(1) {
-  transform: translate(-50%, -50%) rotate(40deg);
-}
-.card__set img:nth-child(2) {
-  transform: translate(-50%, -50%) rotate(30deg);
-}
-.card__set img:nth-child(3) {
-  transform: translate(-50%, -50%) rotate(20deg);
-}
-.card__set img:nth-child(4) {
-  transform: translate(-50%, -50%) rotate(10deg);
-}
-.card__set img:nth-child(5) {
-  transform: translate(-50%, -50%) rotate(0);
-}
-.card__set img:nth-child(6) {
-  transform: translate(-50%, -50%) rotate(-10deg);
-}
-.card__set img:nth-child(7) {
-  transform: translate(-50%, -50%) rotate(-20deg);
-}
-.card__set img:nth-child(8) {
-  transform: translate(-50%, -50%) rotate(-30deg);
+  background: rgba(0, 0, 0, 0.548);
+  position: relative;
 }/*# sourceMappingURL=index.css.map */
