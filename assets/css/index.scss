@@ -426,3 +426,148 @@ $split-color: #fff;
 
 
 }
+
+
+.cardanimation {
+	width: 250px;
+	height: 375px;
+	position: absolute;
+	margin: auto;
+	left: 0;
+	right: 0;
+	top: 40px;
+	box-shadow: 0px 0px 2px #222;
+	border-radius: 16px;
+	display: flex;
+}
+
+#one {
+	background: url(../img/card1.jpg) no-repeat center center /cover;
+	animation-name: shuffle;
+	animation-duration: .3s;
+	animation-iteration-count: 5;
+	z-index: 5;
+}
+
+#two {
+	background: url(../img/card2.jpg) no-repeat center center /cover;
+	animation-name: shuffletwo;
+	animation-duration: .3s;
+	animation-iteration-count: 5;
+	animation-delay: .8s;
+	z-index: 4;
+}
+
+#three {
+	background: url(../img/card3.jpg) no-repeat center center /cover;
+	animation-name: shufflethree;
+	animation-duration: .3s;
+	animation-iteration-count: 5;
+	animation-delay: 1.2s;
+	z-index: 3;
+}
+
+#four {
+	background: url(../img/card4.jpg) no-repeat center center /cover;
+	animation-name: shufflefour;
+	animation-duration: .3s;
+	animation-iteration-count: 5;
+	animation-delay: 1.6s;
+	z-index: 2;
+}
+
+#five {
+	background: url(../img/card11.jpg) no-repeat center center /cover;
+	animation-name: shufflefive;
+	animation-duration: .3s;
+	animation-iteration-count: 5;
+	animation-delay: 1.8s;
+	z-index: 1;
+}
+
+#shuffle {
+	justify-content: center;
+	align-items: center;
+}
+
+
+@keyframes shuffle {
+	0% {
+		transform: translate(4vw, 0) rotate(8deg);
+		z-index: 5;
+	}
+
+	100% {
+		transform: translate(0, 0);
+		z-index: 1;
+	}
+}
+
+@keyframes shuffletwo {
+	0% {
+		transform: translate(0, 0);
+		z-index: 4;
+	}
+
+	50% {
+		transform: translate(-4vw, 0) rotate(-5deg);
+		z-index: 1;
+	}
+
+	100% {
+		transform: translate(0, 0);
+		z-index: 8;
+	}
+}
+
+@keyframes shufflethree {
+	0% {
+		transform: translate(0, 0);
+		z-index: 3;
+	}
+
+	50% {
+		transform: translate(4vw, 0);
+		z-index: 1;
+	}
+
+	100% {
+		transform: translate(0, 0);
+		z-index: 10;
+	}
+}
+
+@keyframes shufflefour {
+	0% {
+		transform: translate(0, 0);
+		z-index: 4;
+	}
+
+	50% {
+		transform: translate(-4vw, 0) rotate(-3deg);
+		z-index: 1;
+	}
+
+	100% {
+		transform: translate(0, 0);
+		z-index: 14;
+	}
+}
+
+@keyframes shufflefive {
+	0% {
+		transform: translate(0, 0);
+		z-index: 3;
+	}
+
+	50% {
+		transform: translate(4vw, 0) rotate(4deg);
+		z-index: 1;
+	}
+
+	100% {
+		-webkit-transform: translate(0, 0);
+		transform: translate(0, 0);
+		z-index: 16;
+	}
+}
