@@ -390,8 +390,12 @@
   display: flex;
 }
 
+#zero {
+  background: url(../img/card11.jpg) no-repeat center center/cover;
+}
+
 #one {
-  background: url(../img/card1.jpg) no-repeat center center/cover;
+  background: url(../img/card11.jpg) no-repeat center center/cover;
   -webkit-animation-name: shuffle;
           animation-name: shuffle;
   -webkit-animation-duration: 0.3s;
@@ -441,7 +445,7 @@
 }
 
 #five {
-  background: url(../img/card11.jpg) no-repeat center center/cover;
+  background: url(../img/card5.jpg) no-repeat center center/cover;
   -webkit-animation-name: shufflefive;
           animation-name: shufflefive;
   -webkit-animation-duration: 0.3s;
@@ -460,6 +464,10 @@
 
 @-webkit-keyframes shuffle {
   0% {
+    transform: translate(0, 0);
+    z-index: 5;
+  }
+  50% {
     transform: translate(4vw, 0) rotate(8deg);
     z-index: 5;
   }
@@ -471,6 +479,10 @@
 
 @keyframes shuffle {
   0% {
+    transform: translate(0, 0);
+    z-index: 5;
+  }
+  50% {
     transform: translate(4vw, 0) rotate(8deg);
     z-index: 5;
   }
@@ -486,7 +498,7 @@
   }
   50% {
     transform: translate(-4vw, 0) rotate(-5deg);
-    z-index: 1;
+    z-index: 4;
   }
   100% {
     transform: translate(0, 0);
@@ -500,7 +512,7 @@
   }
   50% {
     transform: translate(-4vw, 0) rotate(-5deg);
-    z-index: 1;
+    z-index: 4;
   }
   100% {
     transform: translate(0, 0);
@@ -541,7 +553,7 @@
     z-index: 4;
   }
   50% {
-    transform: translate(-4vw, 0) rotate(-3deg);
+    transform: translate(-3.6vw, 0) rotate(-3deg);
     z-index: 1;
   }
   100% {
@@ -555,7 +567,7 @@
     z-index: 4;
   }
   50% {
-    transform: translate(-4vw, 0) rotate(-3deg);
+    transform: translate(-3.6vw, 0) rotate(-3deg);
     z-index: 1;
   }
   100% {

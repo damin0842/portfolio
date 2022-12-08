@@ -441,8 +441,12 @@ $split-color: #fff;
 	display: flex;
 }
 
+#zero {
+	background: url(../img/card11.jpg) no-repeat center center /cover;
+}
+
 #one {
-	background: url(../img/card1.jpg) no-repeat center center /cover;
+	background: url(../img/card11.jpg) no-repeat center center /cover;
 	animation-name: shuffle;
 	animation-duration: .3s;
 	animation-iteration-count: 5;
@@ -477,7 +481,7 @@ $split-color: #fff;
 }
 
 #five {
-	background: url(../img/card11.jpg) no-repeat center center /cover;
+	background: url(../img/card5.jpg) no-repeat center center /cover;
 	animation-name: shufflefive;
 	animation-duration: .3s;
 	animation-iteration-count: 5;
@@ -493,6 +497,11 @@ $split-color: #fff;
 
 @keyframes shuffle {
 	0% {
+		transform: translate(0, 0);
+		z-index: 5;
+	}
+
+	50% {
 		transform: translate(4vw, 0) rotate(8deg);
 		z-index: 5;
 	}
@@ -511,7 +520,7 @@ $split-color: #fff;
 
 	50% {
 		transform: translate(-4vw, 0) rotate(-5deg);
-		z-index: 1;
+		z-index: 4;
 	}
 
 	100% {
@@ -544,7 +553,7 @@ $split-color: #fff;
 	}
 
 	50% {
-		transform: translate(-4vw, 0) rotate(-3deg);
+		transform: translate(-3.6vw, 0) rotate(-3deg);
 		z-index: 1;
 	}
 
