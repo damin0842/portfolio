@@ -157,14 +157,17 @@
 	}
 }
 
-// === Variables =====
-$perspective: 60rem;
-$font-size: 4.25rem;
-$split-position: 49%;
-$split-thickness: 4px;
-$split-color: #fff;
+
 
 .sec1_text3 {
+
+	// === Variables =====
+	$perspective: 60rem;
+	$font-size: 4.25rem;
+	$split-position: 49%;
+	$split-thickness: 4px;
+	$split-color: #fff;
+
 	width: 100vw;
 	z-index: 100;
 	transform-style: preserve-3d;
@@ -279,8 +282,6 @@ $split-color: #fff;
 	background: url('../img/noise1.gif') center center;
 	background-color: rgba(0, 0, 0, 0.8);
 	background-blend-mode: multiply;
-	filter: blur(1px);
-
 
 
 	.t4__title {
@@ -288,12 +289,25 @@ $split-color: #fff;
 		width: 250vw;
 		font-size: 35vw;
 		line-height: 0.75;
-		color: #d33d00;
 		transform: rotate(352deg) translate(-2%, -15%);
 
 		span {
 			display: inline-block;
+
+			&:nth-child(1) {
+				color: #fff;
+			}
+
+			&:nth-child(2) {
+				color: #fff;
+			}
+
+			&:nth-child(3) {
+				color: #fff;
+			}
 		}
+
+
 	}
 }
 
@@ -302,6 +316,7 @@ $split-color: #fff;
 	width: 100vw;
 	text-align: center;
 	font-size: 0;
+	overflow: hidden;
 
 	img {
 		width: 100%;
@@ -418,25 +433,25 @@ $split-color: #fff;
 
 }
 
-
-.cardanimation {
-	width: 250px;
-	height: 375px;
+#shuffle {
 	position: absolute;
-	margin: auto;
-	left: 0;
-	right: 0;
-	box-shadow: 0px 0px 2px #222;
-	border-radius: 16px;
-	display: flex;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
-#zero {
+.cardanimation {
 	background: url(../img/card11.jpg) no-repeat center center /cover;
+	position: absolute;
+	width: 250px;
+	height: 375px;
+	box-shadow: 0px 0px 2px #222;
+	border-radius: 16px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+	transform: translate(-50%, 0%);
 }
 
 #one {
-	background: url(../img/card11.jpg) no-repeat center center /cover;
 	animation-name: shuffle;
 	animation-duration: .3s;
 	animation-iteration-count: 5;
@@ -444,7 +459,6 @@ $split-color: #fff;
 }
 
 #two {
-	background: url(../img/card2.jpg) no-repeat center center /cover;
 	animation-name: shuffletwo;
 	animation-duration: .3s;
 	animation-iteration-count: 5;
@@ -453,7 +467,6 @@ $split-color: #fff;
 }
 
 #three {
-	background: url(../img/card3.jpg) no-repeat center center /cover;
 	animation-name: shufflethree;
 	animation-duration: .3s;
 	animation-iteration-count: 5;
@@ -462,7 +475,6 @@ $split-color: #fff;
 }
 
 #four {
-	background: url(../img/card4.jpg) no-repeat center center /cover;
 	animation-name: shufflefour;
 	animation-duration: .3s;
 	animation-iteration-count: 5;
@@ -471,7 +483,6 @@ $split-color: #fff;
 }
 
 #five {
-	background: url(../img/card5.jpg) no-repeat center center /cover;
 	animation-name: shufflefive;
 	animation-duration: .3s;
 	animation-iteration-count: 5;
@@ -487,12 +498,12 @@ $split-color: #fff;
 
 @keyframes shuffle {
 	0% {
-		transform: translate(0, 0);
+		transform: translate(0, 0%);
 		z-index: 5;
 	}
 
 	50% {
-		transform: translate(4vw, 0) rotate(8deg);
+		transform: translate(-50%, 0) rotate(8deg);
 		z-index: 5;
 	}
 
@@ -509,7 +520,7 @@ $split-color: #fff;
 	}
 
 	50% {
-		transform: translate(-4vw, 0) rotate(-5deg);
+		transform: translate(-50%, 0) rotate(-5deg);
 		z-index: 4;
 	}
 
@@ -526,7 +537,7 @@ $split-color: #fff;
 	}
 
 	50% {
-		transform: translate(4vw, 0);
+		transform: translate(50%, 0);
 		z-index: 1;
 	}
 
@@ -543,7 +554,7 @@ $split-color: #fff;
 	}
 
 	50% {
-		transform: translate(-3.6vw, 0) rotate(-3deg);
+		transform: translate(-50%, 0) rotate(-3deg);
 		z-index: 1;
 	}
 
@@ -560,7 +571,7 @@ $split-color: #fff;
 	}
 
 	50% {
-		transform: translate(4vw, 0) rotate(4deg);
+		transform: translate(50%, 0) rotate(4deg);
 		z-index: 1;
 	}
 
@@ -568,5 +579,86 @@ $split-color: #fff;
 		-webkit-transform: translate(0, 0);
 		transform: translate(0, 0);
 		z-index: 16;
+	}
+}
+
+
+.glitch {
+	color: white;
+	font-size: 100px;
+	position: relative;
+	width: 180px;
+	margin: 0 auto;
+
+}
+
+@keyframes noise-anim {
+	$steps: 20;
+
+	@for $i from 0 through $steps {
+		#{percentage($i*(1/$steps))} {
+			clip: rect(random(100)+px, 9999px, random(100)+px, 0);
+		}
+	}
+}
+
+.glitch:after {
+	content: attr(data-text);
+	position: absolute;
+	left: 2px;
+	text-shadow: -1px 0 red;
+	top: 0;
+	color: white;
+	background: black;
+	overflow: hidden;
+	clip: rect(0, 900px, 0, 0);
+	animation: noise-anim 2s infinite linear alternate-reverse;
+}
+
+@keyframes noise-anim-2 {
+	$steps: 20;
+
+	@for $i from 0 through $steps {
+		#{percentage($i*(1/$steps))} {
+			clip: rect(random(100)+px, 9999px, random(100)+px, 0);
+		}
+	}
+}
+
+.glitch:before {
+	content: attr(data-text);
+	position: absolute;
+	left: -2px;
+	text-shadow: 1px 0 blue;
+	top: 0;
+	color: white;
+	background: black;
+	overflow: hidden;
+	clip: rect(0, 900px, 0, 0);
+	animation: noise-anim-2 3s infinite linear alternate-reverse;
+}
+
+.sec1_text6 {
+	width: 100vw;
+	font-size: 0;
+
+	img {
+		display: none;
+	}
+
+	#canvas2 {
+		display: none;
+	}
+
+	#canvas {
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: auto;
+		margin-bottom: auto;
 	}
 }
