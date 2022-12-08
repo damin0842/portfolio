@@ -47,28 +47,20 @@
   display: inline-block;
   color: #fff;
 }
-.sec1_text1 p {
+.sec1_text1 span i p {
   font-family: "GmarketSans";
-  bottom: 15%;
-  right: -4%;
   position: absolute;
   font-size: 1vw;
   white-space: nowrap;
-  margin: 0;
-  position: fixed;
   color: transparent;
   transition: all 0.3s ease-out;
+  transform: translate(-50%, -50%);
 }
-.sec1_text1 p::before {
-  content: "우리가 해야 할 일은 끊임없이 호기심을 갖고, 새로운 생각을 시험해보고 새로운 인상을 받는 것이다. ";
+.sec1_text1 span i p::before {
+  content: "우리가 해야 할 일은 끊임없이 호기심을 갖고, 새로운 생각을 시험해보고, 새로운 인상을 받는 것이다.";
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
   overflow: hidden;
   color: #fff;
-  border-right: 2px solid #fff;
   -webkit-animation: typing 1s steps(31);
           animation: typing 1s steps(31);
 }
@@ -146,7 +138,7 @@
   font-size: 6px;
   color: rgb(255, 255, 255);
   font-family: var(--font-sub1);
-  line-height: 1.8;
+  line-height: 1.6;
 }
 .sec1_text2 .text2_camera .text2_frame .text2_ment i {
   font-family: "UtoImageHand";
@@ -279,7 +271,6 @@
 }
 .sec1_text5 .t5__title {
   font-size: 20vw;
-  line-height: 0.8;
   color: #fff;
   text-transform: uppercase;
   font-family: "Tungsten";
@@ -302,7 +293,7 @@
 .sec1_text5 .t5__title span:before,
 .sec1_text5 .t5__title span:after {
   content: "";
-  padding: 0.4em 0.4em;
+  padding: 12vh 24vw;
   position: absolute;
   left: 50%;
   width: 100%;
