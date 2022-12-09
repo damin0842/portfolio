@@ -388,6 +388,7 @@
 	left: 50%;
 	transform: translate(-50%, -50%);
 
+
 	.card {
 		position: absolute;
 		width: 250px;
@@ -395,6 +396,7 @@
 		box-shadow: 0px 0px 2px #222;
 		border-radius: 16px;
 		border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+		transform-style: preserve-3d;
 	}
 
 	.card1 {
@@ -642,23 +644,4 @@
 	width: 100vw;
 	font-size: 0;
 
-	img {
-		display: none;
-	}
-
-	#canvas2 {
-		display: none;
-	}
-
-	#canvas {
-		position: absolute;
-		left: 0;
-		right: 0;
-		top: 0;
-		bottom: 0;
-		margin-left: auto;
-		margin-right: auto;
-		margin-top: auto;
-		margin-bottom: auto;
-	}
 }
