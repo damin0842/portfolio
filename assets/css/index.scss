@@ -295,7 +295,7 @@
 			display: inline-block;
 
 			&:nth-child(1) {
-				color: #fff;
+				color: #d33d00;
 
 				&::after {
 					content: 'asdasf';
@@ -304,7 +304,8 @@
 			}
 
 			&:nth-child(2) {
-				color: #d33d00;
+				color: #fff;
+
 
 				&::after {
 					content: 'asdasf';
@@ -314,7 +315,7 @@
 			}
 
 			&:nth-child(3) {
-				color: #fff;
+				color: #d33d00;
 
 				&::after {
 					content: 'asdasf';
