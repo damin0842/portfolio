@@ -296,14 +296,31 @@
 
 			&:nth-child(1) {
 				color: #fff;
+
+				&::after {
+					content: 'asdasf';
+					position: absolute;
+				}
 			}
 
 			&:nth-child(2) {
-				color: #fff;
+				color: #d33d00;
+
+				&::after {
+					content: 'asdasf';
+					position: absolute;
+
+				}
 			}
 
 			&:nth-child(3) {
 				color: #fff;
+
+				&::after {
+					content: 'asdasf';
+					position: absolute;
+
+				}
 			}
 		}
 
@@ -324,6 +341,7 @@
 	}
 
 	.t5__title {
+		line-height: 1;
 		font-size: 20vw;
 		color: #fff;
 		text-transform: uppercase;
@@ -349,13 +367,13 @@
 		span:before,
 		span:after {
 			content: '';
-			padding: 12vh 20vw;
+			padding: 16% 23vw;
 			position: absolute;
 			left: 50%;
 			width: 100%;
 			top: 50%;
 			display: block;
-			border: 15px solid red;
+			border: 15px solid #d33d00;
 			transform: translateX(-50%) translateY(-50%) rotate(0deg);
 			animation: tipsy 10s infinite alternate ease-in-out;
 		}
@@ -603,7 +621,7 @@
 	}
 
 	@keyframes noise-anim {
-		$steps: 20;
+		$steps: 24;
 
 		@for $i from 0 through $steps {
 			#{percentage($i*(1/$steps))} {
@@ -626,7 +644,7 @@
 	}
 
 	@keyframes noise-anim-2 {
-		$steps: 20;
+		$steps: 24;
 
 		@for $i from 0 through $steps {
 			#{percentage($i*(1/$steps))} {
