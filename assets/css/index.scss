@@ -158,7 +158,6 @@
 }
 
 
-
 .sec1_text3 {
 
 	// === Variables =====
@@ -604,10 +603,6 @@
 }
 
 
-
-
-
-
 .sec1_text6 {
 	width: 100vw;
 	font-size: 0;
@@ -667,7 +662,6 @@
 		animation: noise-anim-2 3s infinite linear alternate-reverse;
 	}
 }
-
 
 
 .sec1_text7 {
@@ -739,15 +733,6 @@
 }
 
 
-
-
-
-
-
-
-
-
-
 .sec1_text8 {
 	width: 100vw;
 	left: 50%;
@@ -760,10 +745,18 @@
 .sec1_text8 img {
 	width: 100%;
 	height: 100%;
+	object-fit: cover;
+}
+
+.sec1_text8 video {
+	object-fit: cover;
+	width: 1280px;
+	height: 692px;
 
 }
 
 .t8__title {
+	// -webkit-text-stroke: 1px #000;
 	color: #fff;
 	font-size: 11vw;
 	line-height: 0.8;
