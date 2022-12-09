@@ -750,9 +750,11 @@
 
 .sec1_text8 video {
 	object-fit: cover;
-	width: 1280px;
+	max-width: 1280px;
 	height: 692px;
-
+	border: 1vw solid #000;
+	border-radius: 20px;
+	filter: blur(2px);
 }
 
 .t8__title {
