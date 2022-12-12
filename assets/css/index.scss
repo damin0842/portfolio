@@ -706,10 +706,18 @@
 
 		.left {
 			width: 100%;
+
+			&:hover img {
+				width: 105%;
+			}
 		}
 
 		.right {
 			width: 100%;
+
+			&:hover img {
+				width: 105%;
+			}
 		}
 
 		img {
@@ -717,10 +725,6 @@
 			height: 100%;
 			object-fit: cover;
 			transition: width 0.5s ease;
-
-			&:hover {
-				width: 110%;
-			}
 		}
 
 		.t7_title {
@@ -800,9 +804,7 @@
 		left: 50%;
 		transform: translate(-50%, -46%);
 
-		p {
-			margin-bottom: 2%;
-		}
+		p {}
 
 		.sub {
 			span {
