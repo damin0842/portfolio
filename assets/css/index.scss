@@ -23,15 +23,13 @@
 	background: #000;
 	height: 30000px;
 
-	&::-webkit-scrollbar {
-		display: none;
-	}
+
 }
 
 #section1 {
 	background: #000;
 	height: 30000px;
-	: :-webkit-scrollbar:display
+
 }
 
 .sec1_text1 {
@@ -639,7 +637,7 @@
 		position: relative;
 		width: 180px;
 		margin: 0 auto;
-
+		line-height: 1;
 	}
 
 	@keyframes noise-anim {
@@ -704,7 +702,7 @@
 		line-height: 0.8;
 		color: #d33d00;
 		text-transform: uppercase;
-		font-family: "Tungsten";
+
 		position: absolute;
 		top: 50%;
 		left: 50%;
@@ -752,15 +750,23 @@
 			color: #fff;
 
 			div {
+				span {
+					text-shadow: none;
+					-webkit-text-stroke: 2px rgba(0, 0, 0, 0.3);
+					color: #fff;
+				}
 
 				p {
+					line-height: 0.8;
+					font-family: 'Tungsten-Semibold';
 					width: 9vw;
-					font-size: 1.2vw;
+					font-size: 1.4vw;
 					color: #fff;
-					border: 1px solid #fff;
+					border: 1px solid rgba(255, 255, 255, 0.8);
 					border-radius: 3vw;
 					padding: 1.3vh 1.5vw;
 					margin: 1.5vh 9vw;
+					font-weight: 100;
 
 					&:hover {
 						background-color: #fff;
@@ -769,8 +775,6 @@
 					}
 				}
 			}
-
-
 		}
 
 		.t7_title_right {
@@ -782,13 +786,21 @@
 			display: flex;
 			color: #fff;
 
+
 			div {
+				span {
+					text-shadow: none;
+					-webkit-text-stroke: 2px rgba(0, 0, 0, 0.3);
+					color: #fff;
+				}
 
 				p {
+					line-height: 0.8;
+					font-family: 'Tungsten-Semibold';
 					width: 9vw;
-					font-size: 1.2vw;
+					font-size: 1.4vw;
 					color: #fff;
-					border: 1px solid #fff;
+					border: 1px solid rgba(255, 255, 255, 0.8);
 					border-radius: 3vw;
 					padding: 1.3vh 1.5vw;
 					margin: 1.5vh 9vw;
@@ -824,7 +836,7 @@
 	video {
 		border: 0.5vw solid #000;
 		border-radius: 15px;
-		filter: blur(2px) grayscale(1);
+		filter: blur(2px) grayscale(100%);
 		position: absolute;
 		top: 50%;
 		left: 50%;
@@ -838,7 +850,9 @@
 	}
 
 	.t8__title {
-		-webkit-text-stroke: 1px rgba(0, 0, 0, 0.5);
+		text-shadow: none;
+		-webkit-text-stroke: 2px rgba(0, 0, 0, 0.3);
+		color: #fff;
 		text-transform: uppercase;
 		font-family: "Tungsten";
 		position: absolute;
@@ -847,29 +861,32 @@
 		transform: translate(-50%, -60%);
 
 		p {
-			color: #fff;
-			font-size: 12vw;
+			font-size: 14vw;
 			line-height: 0.8;
 		}
 	}
 
 	.t8__sub {
+
 		text-transform: uppercase;
 		font-family: "Tungsten";
 		position: absolute;
 		transform: translate(-50%, -50%);
-		bottom: 22%;
+		bottom: 20%;
 		left: 50%;
 		justify-content: space-between;
 		width: 30vw;
 		display: flex;
 
 		div {
-			font-size: 2vw;
+
+			line-height: 1.2;
+			font-family: 'Tungsten-Semibold';
+			font-size: 2.2vw;
 			color: #fff;
-			border: 1px solid #fff;
-			border-radius: 3vw;
-			padding: 0.3vh 3vw;
+			border: 1px solid rgba(255, 255, 255, 0.8);
+			border-radius: 2vw;
+			width: 8vw;
 
 			&:hover {
 				background-color: #fff;

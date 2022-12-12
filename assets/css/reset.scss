@@ -14,6 +14,25 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Tungsten-Semibold";
+  src: local("Tungsten-Semibold"), url("../fonts/Tungsten-Semibold.ttf") format("truetype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "tungstencompbold";
+  src: local("tungstencompbold"), url("../fonts/tungstencompbold.ttf") format("truetype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "tungstenbook";
+  src: local("tungstenbook"), url("../fonts/tungstenbook.ttf") format("truetype");
+  font-style: normal;
+}
+
+
 :root {
   --white: #fff;
   --black: #000;
@@ -63,9 +82,10 @@ html {
 body {
   overscroll-behavior: none;
 
-  &::-webkit-scrollbar {
-    display: none;
-  }
+  // &::-webkit-scrollbar {
+  //   display: none;
+  // }
+  ////스크롤바 숨기기
 }
 
 //공백 초기화
