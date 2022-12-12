@@ -62,6 +62,10 @@ html {
 // 스크롤 체이닝
 body {
   overscroll-behavior: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 //공백 초기화

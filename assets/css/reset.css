@@ -50,6 +50,9 @@ body {
   -ms-scroll-chaining: none;
       overscroll-behavior: none;
 }
+body::-webkit-scrollbar {
+  display: none;
+}
 
 body,
 button,
