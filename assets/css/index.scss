@@ -21,7 +21,7 @@
 
 #section1 {
 	background: #000;
-	height: 30000px;
+	height: 40000px;
 
 
 }
@@ -437,6 +437,8 @@
 			border-radius: 16px;
 			border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 			transform-style: preserve-3d;
+
+
 		}
 
 		.card1 {
@@ -482,7 +484,7 @@
 		transform: translate(-50%, -50%);
 
 		.cardanimation {
-			background: url(../img/card11.jpg) no-repeat center center /cover;
+
 			position: absolute;
 			width: 300px;
 			height: 450px;
@@ -493,6 +495,7 @@
 		}
 
 		#one {
+			background: url(../img/card1.jpg) no-repeat center center /cover;
 			animation-name: shuffle;
 			animation-duration: .3s;
 			animation-iteration-count: 5;
@@ -500,6 +503,8 @@
 		}
 
 		#two {
+			background: url(../img/card2.jpg) no-repeat center center /cover;
+
 			animation-name: shuffletwo;
 			animation-duration: .3s;
 			animation-iteration-count: 5;
@@ -508,6 +513,8 @@
 		}
 
 		#three {
+			background: url(../img/card3.jpg) no-repeat center center /cover;
+
 			animation-name: shufflethree;
 			animation-duration: .3s;
 			animation-iteration-count: 5;
@@ -516,6 +523,8 @@
 		}
 
 		#four {
+			background: url(../img/card4.jpg) no-repeat center center /cover;
+
 			animation-name: shufflefour;
 			animation-duration: .3s;
 			animation-iteration-count: 5;
@@ -524,6 +533,8 @@
 		}
 
 		#five {
+			background: url(../img/card5.jpg) no-repeat center center /cover;
+
 			animation-name: shufflefive;
 			animation-duration: .3s;
 			animation-iteration-count: 5;
@@ -628,7 +639,6 @@
 
 
 .sec1_text6 {
-	width: 100vw;
 	font-size: 0;
 
 	.glitch {
@@ -828,8 +838,8 @@
 	font-size: 0;
 
 	img {
-		width: 100vw;
-		height: 100%;
+		width: 100%;
+		height: 100vh;
 		object-fit: cover;
 	}
 
@@ -872,7 +882,7 @@
 		font-family: "Tungsten";
 		position: absolute;
 		transform: translate(-50%, -50%);
-		bottom: 20%;
+		bottom: 5%;
 		left: 50%;
 		justify-content: space-between;
 		width: 30vw;
