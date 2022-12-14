@@ -911,7 +911,7 @@
 		position: absolute;
 		width: 30vw;
 		height: 600px;
-		background: rgba(255, 255, 255, 0.5);
+		background: rgba(0, 0, 0, 0.7);
 		border-radius: 15px;
 		z-index: 1000;
 		top: 50%;
@@ -920,6 +920,7 @@
 		font-size: 5vw;
 		text-transform: uppercase;
 		text-align: center;
+		color: #fff;
 
 		input {
 			text-align: center;
