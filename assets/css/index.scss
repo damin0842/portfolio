@@ -927,14 +927,14 @@
 			width: 10vw;
 		}
 	}
-}
 
-#webgl {
-	position: fixed;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	overflow: hidden;
-	background: radial-gradient(circle farthest-corner at center center, #07102175, #19324a7a);
+	#webgl {
+		position: fixed;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+		background: radial-gradient(circle farthest-corner at center center, #07102175, #19324a7a);
+	}
 }
