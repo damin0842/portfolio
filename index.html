@@ -290,8 +290,7 @@
         </div>
         <!-- text6 -->
 
-        <div class="sec1_text7 fixed" data-0="display:none;" data-22500="z-index:1; display:block;"
-            data-26500="display:none;">
+        <div class="sec1_text7 fixed" data-0="display:none;" data-22500="display:block;" data-26500="display:none;">
             <div class="t7__inner">
                 <div class="left">
                     <div class="leftImg" data-22500="width:0%;" data-24000="width:100%" data-25900="width:100%"
@@ -376,8 +375,7 @@
             </div>
         </div>
         <!-- sec1_text8 g1 -->
-        <div class="sec1_text7 fixed" data-0="display:none;" data-27500="z-index:1; display:block;"
-            data-31500="display:none;">
+        <div class="sec1_text7 fixed" data-0="display:none;" data-27500="display:block;" data-31500="display:none;">
             <div class="t7__inner">
                 <div class="left">
                     <div class="leftImg" data-27500="width:0%;" data-29000="width:100%" data-30900="width:100%"
@@ -463,8 +461,7 @@
         </div>
         <!-- sec1_text8 g2 -->
 
-        <div class="sec1_text7 fixed" data-0="display:none;" data-32500="z-index:1; display:block;"
-            data-36500="display:none;">
+        <div class="sec1_text7 fixed" data-0="display:none;" data-32500="display:block;" data-36500="display:none;">
             <div class="t7__inner">
                 <div class="left">
                     <div class="leftImg" data-32500="width:0%;" data-34000="width:100%" data-35900="width:100%"
@@ -530,12 +527,13 @@
             <!-- t7__inner -->
         </div>
         <!-- sec1_text7 g3 -->
-        <div class="sec1_text8 fixed" data-34899="display:none" data-34900="display:block;" data-38000="display:none">
+        <div class="sec1_text8 fixed" data-34899="display:none" data-34900="display:block;"
+            data-38000="transform:translate(-50%,-50%)" data-39500="transform:translate(-50%,-150%)">
             >
             <video muted="muted" autoplay="autoplay" loop="loop">
                 <source src="./assets/video/reactyou.mp4">
             </video>
-            <img src=" ./assets/img/youbg.jpg" alt="">
+            <img src=" ./assets/img/youbg3.jpg" alt="">
             <div class="t8__title">
                 <p>
                     team<br>
@@ -549,6 +547,13 @@
             </div>
         </div>
         <!-- sec1_text8 g3 -->
+        <div class="sec1_text9 fixed" data-35899="display:none" data-38000="display:block;">
+            >
+
+            <canvas id="webgl"></canvas>
+
+        </div>
+        <!-- sec1_text9 g3 -->
 
     </section>
     <!-- section1 -->
@@ -578,11 +583,122 @@
         });
 
 
-
     </script>
+    <script src="./assets/three/three.min.js"></script>
+    <script>
+        class Stage {
+            constructor() {
+                this.renderParam = {
+                    width: window.innerWidth,
+                    height: window.innerHeight,
+                }
+                this.cameraParam = {
+                    fov: 100,
+                    near: 1,
+                    far: 1000
+                }
+                this.scene = null;
+                this.rederer = null;
+                this.camera = null;
+                this.mesh = null;
+                this.init()
+            }
+            init() {
+                this._setScene();
+                this._setRender();
+                this._setCamera();
+                this._setMesh();
+                this._setLight();        //조명 설정
+                this._setFog();
+                this._update();
+                this._render();
+                onresize = this._resize.bind(this);
+            }
+            _setScene() {
+                this.scene = new THREE.Scene();
+            }
+            _setRender() {
+                this.renderer = new THREE.WebGLRenderer({
+                    canvas: document.getElementById("webgl"),
+                    antialias: true,
+                    alpha: true
+                });
+                this.renderer.setSize(this.renderParam.width, this.renderParam.height);
+                this.renderer.setPixelRatio(window.devicePixelRatio > 1 ? 2 : 1);
+            }
+            _setCamera() {
+                this.camera = new THREE.PerspectiveCamera(
+                    this.cameraParam.fov,
+                    this.renderParam.width / this.renderParam.height,
+                    this.cameraParam.near,
+                    this.cameraParam.far
+                );
+                this.camera.position.set(0, 0, 100);
+                this.camera.lookAt(new THREE.Vector3(0, 0, 0));
+            }
+            _setMesh() {
+                const vertices = [];
+                const size = 3000;
+                const length = 3000;
+                const geometry = new THREE.BufferGeometry();
+                const material = new THREE.PointsMaterial({
+                    color: 0xffffff,
+                    size: 2
+                });
+                for (let i = 0; i < length; i++) {
+                    const x = size * (Math.random() - 0.5);
+                    const y = size * (Math.random() - 0.5);
+                    const z = size * (Math.random() - 0.5);
 
+                    vertices.push(x, y, z);
+                }
+                geometry.setAttribute(
+                    "position",
+                    new THREE.Float32BufferAttribute(vertices, 3)
+                )
+                this.mesh = new THREE.Points(geometry, material);
+                this.scene.add(this.mesh);
+            }
+            _setLight() {
+                const light = new THREE.DirectionalLight(0xffffff, .5);
+                light.position.y = 10;
+                this.scene.add(light);
 
+                // const light2 = new THREE.DirectionalLight(0xffffff, .5);
+                // light2.position.set(-10, -10, 10);
+                // this.scene.add(light2);
 
+                const ambientLight = new THREE.AmbientLight(0x00ff00, .5);
+                ambientLight.position.set(-10, -10, 10);
+                this.scene.add(ambientLight);
+            }
+            _setFog() {
+                this.scene.fog = new THREE.Fog(0xffffff, 50, 200);
+            }
+            _update() {
+                let rotation = 0;
+                const radian = (rotation * Math.PI) / 100;
+                rotation += 0.1;
+                this.camera.position.x = 1000 * Math.sin(rotation);
+                this.camera.position.z = 1000 * Math.cos(rotation);
+                this.mesh.rotation.y += 0.01;
+            }
+            _render() {
+
+                this._update();
+                this.renderer.render(this.scene, this.camera);
+                requestAnimationFrame(this._render.bind(this))
+            }
+            _resize() {
+                this.camera.aspect = window.innerWidth / window.innerHeight;
+                this.camera.updateProjectionMatrix();
+                this.renderer.setSize(window.innerWidth, window.innerHeight);
+            }
+        }
+        (() => {
+            const stage = new Stage();
+        })();
+    </script>
 </body>
 
 </html>

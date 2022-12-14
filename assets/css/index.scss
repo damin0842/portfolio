@@ -21,15 +21,7 @@
 
 #section1 {
 	background: #000;
-	height: 40000px;
-
-
-}
-
-#section1 {
-	background: #000;
-	height: 30000px;
-
+	height: 42000px;
 }
 
 .sec1_text1 {
@@ -705,6 +697,7 @@
 	transform: translate(-50%, -50%);
 	text-align: center;
 	font-size: 0;
+	z-index: 2;
 
 	.t7__inner {
 		display: flex;
@@ -836,6 +829,7 @@
 	transform: translate(-50%, -50%);
 	text-align: center;
 	font-size: 0;
+	z-index: 1;
 
 	img {
 		width: 100%;
@@ -905,4 +899,22 @@
 			}
 		}
 	}
+}
+
+.sec1_text9 {
+	width: 100vw;
+	height: 100vh;
+	background: url('../img/noise.gif') center center;
+	//background-blend-mode: multiply;
+
+}
+
+#webgl {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background: radial-gradient(circle farthest-corner at center center, #07102175, #19324a7a);
 }
