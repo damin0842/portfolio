@@ -911,7 +911,7 @@
 	.contact {
 		position: absolute;
 		width: 50vw;
-		height: 600px;
+		height: 40vh;
 		background: rgba(0, 0, 0, 0.7);
 		border-radius: 15px;
 		z-index: 10;
@@ -929,7 +929,8 @@
 			justify-content: space-between;
 
 			.profile {
-				width: 100%;
+				width: 40%;
+				height: 100%;
 				margin: 0 auto;
 				margin-bottom: 2vh;
 
