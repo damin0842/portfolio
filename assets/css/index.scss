@@ -841,7 +841,7 @@
 	video {
 		border: 0.5vw solid #000;
 		border-radius: 15px;
-		filter: blur(2px) grayscale(70%);
+		filter: blur(1px) grayscale(50%);
 		position: absolute;
 		top: 50%;
 		left: 50%;
@@ -892,6 +892,9 @@
 			border: 1px solid rgba(255, 255, 255, 0.8);
 			border-radius: 2vw;
 			width: 9vw;
+			-webkit-text-stroke: 1px rgba(0, 0, 0, 0.3);
+			z-index: 1000;
+
 
 			&:hover {
 				background-color: #fff;
