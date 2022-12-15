@@ -927,6 +927,7 @@
 		color: #fff;
 
 		.contact_inner {
+			padding: 20px;
 			width: 100%;
 			display: flex;
 			justify-content: space-between;
@@ -978,9 +979,14 @@
 
 			.title {
 				width: 100%;
-				font-size: 2vw;
-				font-family: 'GmarketSans';
+				font-size: 5vw;
 
+
+				p {
+					font-family: 'GmarketSans';
+					text-transform: lowercase;
+					font-size: 2vw;
+				}
 			}
 
 		}
