@@ -21,7 +21,7 @@
 
 #section1 {
 	background: #000;
-	height: 43000px;
+	height: 44000px;
 }
 
 .sec1_text1 {
@@ -922,8 +922,7 @@
 		position: absolute;
 		width: 620px;
 		height: 620px;
-		background-color: rgba(0, 0, 0, 0.7);
-		// background: url(/assets/img/Pi-Slices.gif) no-repeat center center/cover;
+		background: url(/assets/img/nothing.gif) no-repeat center center/cover;
 		border-radius: 50%;
 		z-index: 10;
 		top: 50%;
@@ -981,6 +980,7 @@
 			.title {
 				width: 100%;
 				font-size: 6vw;
+				color: rgba(255, 255, 255, 0.9);
 
 				p {
 					font-family: 'GmarketSans';
@@ -1028,7 +1028,7 @@
 	height: 100vh;
 	background: rgb(255, 255, 255);
 
-	// &::after {
-	// 	content: url(/assets/img/noise.gif);
-	// }
+	&::after {
+		content: url(/assets/img/noise.gif);
+	}
 }
