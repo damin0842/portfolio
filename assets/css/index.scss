@@ -756,7 +756,6 @@
 			div {
 				span {
 					text-shadow: none;
-					-webkit-text-stroke: 2px rgba(0, 0, 0, 0.3);
 					color: #fff;
 				}
 
@@ -766,7 +765,7 @@
 					width: 9vw;
 					font-size: 1.4vw;
 					color: #fff;
-					border: 1px solid rgba(255, 255, 255, 0.8);
+					border: 1px solid rgb(255, 255, 255);
 					border-radius: 3vw;
 					padding: 1.3vh 1.5vw;
 					margin: 1.5vh 9vw;
@@ -794,7 +793,6 @@
 			div {
 				span {
 					text-shadow: none;
-					-webkit-text-stroke: 2px rgba(0, 0, 0, 0.3);
 					color: #fff;
 				}
 
@@ -804,7 +802,7 @@
 					width: 9vw;
 					font-size: 1.4vw;
 					color: #fff;
-					border: 1px solid rgba(255, 255, 255, 0.8);
+					border: 1px solid rgb(255, 255, 255);
 					border-radius: 3vw;
 					padding: 1.3vh 1.5vw;
 					margin: 1.5vh 9vw;
@@ -856,7 +854,6 @@
 
 	.t8__title {
 		text-shadow: none;
-		-webkit-text-stroke: 2px rgba(0, 0, 0, 0.3);
 		color: #fff;
 		text-transform: uppercase;
 		font-family: "Tungsten";
@@ -864,6 +861,7 @@
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -62%);
+		z-index: 1;
 
 		p {
 			font-size: 14vw;
@@ -871,8 +869,16 @@
 		}
 	}
 
-	.t8__sub {
+	.orange {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -60%);
+		width: 50%;
+		opacity: 0.9;
+	}
 
+	.t8__sub {
 		text-transform: uppercase;
 		font-family: "Tungsten";
 		position: absolute;
@@ -916,7 +922,8 @@
 		position: absolute;
 		width: 50vw;
 		height: 50vh;
-		background: rgba(0, 0, 0, 0.8);
+		background-color: rgba(0, 0, 0, 0.5);
+		// background: url(/assets/img/Pi-Slices.gif) no-repeat center center/cover;
 		border-radius: 15px;
 		z-index: 10;
 		top: 50%;
@@ -1024,5 +1031,9 @@
 .sec1_text8 {
 	width: 100vw;
 	height: 100vh;
-	background: #805344;
+	background: #fff;
+
+	&::after {
+		content: url(/assets/img/noise.gif);
+	}
 }
