@@ -21,7 +21,7 @@
 
 #section1 {
 	background: #000;
-	height: 44000px;
+	height: 44500px;
 }
 
 .sec1_text1 {
@@ -1028,7 +1028,8 @@
 	height: 100vh;
 	background: rgb(255, 255, 255);
 
-	&::after {
-		content: url(/assets/img/noise.gif);
-	}
+	//&::after {
+	//	content: url(/assets/img/noise.gif);
+	//	object-fit: cover;
+	//}
 }
