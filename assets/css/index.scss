@@ -929,18 +929,28 @@
 		left: 50%;
 		transform: translate(-50%, -50%);
 		font-size: 5vw;
-		text-transform: uppercase;
 		text-align: center;
 		color: #fff;
 
 		.contact_inner {
+			margin-top: 50px;
 			width: 100%;
+			.title {
+				line-height: 1.2;
+				width: 100%;
+				font-size: 6vw;
+				color: rgba(255, 255, 255, 0.9);
+				margin-bottom: 30px;	
 
+				p {
+					font-family: 'GmarketSans';
+					font-size: 1.5vw;
+				}
+			}
 			.profile {
-				padding-top: 100px;
 				width: 40%;
 				margin: 0 auto;
-
+				margin-bottom: 30px;
 				img {
 					width: 200px;
 					border-radius: 50%;
@@ -953,66 +963,36 @@
 					object-fit: cover;
 				}
 
-				.link_button {
-					display: flex;
-					justify-content: space-between;
+				
+			}
+			.link_button {
+				display: flex;
+				justify-content: space-between;
+				width: 30%;
+				margin: 0 auto;
 
-					div {
-						width: 33%;
-						border-left: 1px solid #fff;
+				div {
+					cursor: pointer;
+					width: 32PX;
+					height: 32px;
 
-						div {
-							width: 32px;
-							height: 32px;
-						}
-
-						:nth-of-type(1) {
-							background: url("../img/github.png") no-repeat center center/cover;
-						}
-
-						:nth-of-type(2) {
-							background: url("../img/tistory.png") no-repeat center center/cover;
-						}
+					&:nth-child(1) {
+						background: url("../img/github.png") no-repeat center center/cover;
 					}
+					&:nth-child(2) {
+						background: url("../img/tistory.png") no-repeat center center/cover;
+					}
+					&:nth-child(3) {
+						background: url("../img/instagram.png") no-repeat center center/cover;
+					}	
 				}
+				
 			}
 
-			.title {
-				width: 100%;
-				font-size: 6vw;
-				color: rgba(255, 255, 255, 0.9);
-
-				p {
-					font-family: 'GmarketSans';
-					text-transform: lowercase;
-					font-size: 1.5vw;
-				}
-			}
+			
 		}
 
-		.footer {
-			display: flex;
-			position: absolute;
-			line-height: 0.77;
-			width: 100vw;
-			height: 100px;
-			background: rgba(0, 0, 0, 1);
-			z-index: 10;
-			bottom: 0;
-			left: 50%;
-			transform: translate(-50%, -50%);
-			font-size: 7vw;
-			text-transform: uppercase;
-			color: #fff;
-			align-items: center;
-			text-align: left;
-			overflow: hidden;
-
-			span {
-				width: 300%;
-				height: 100px;
-			}
-		}
+		
 	}
 
 	#webgl {
