@@ -864,7 +864,7 @@
 		z-index: 1;
 
 		p {
-			font-size: 14vw;
+			font-size: 12vw;
 			line-height: 0.8;
 		}
 	}
@@ -874,8 +874,9 @@
 		left: 50%;
 		top: 50%;
 		transform: translate(-48%, -61%);
-		width: 50%;
-		opacity: 0.9;
+		width: 40%;
+		opacity: 0.8;
+		object-fit: contain;
 	}
 
 	.t8__sub {
