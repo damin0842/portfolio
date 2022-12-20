@@ -21,7 +21,7 @@
 
 #section1 {
 	background: #000;
-	height: 44500px;
+	height: 45000px;
 }
 
 .sec1_text1 {
@@ -923,7 +923,7 @@
 		position: absolute;
 		width: 620px;
 		height: 620px;
-		background: url(../img/nothing.gif) no-repeat center center/cover;
+		//background: url(../img/nothing.gif) no-repeat center center/cover;
 		border-radius: 50%;
 		z-index: 10;
 		top: 50%;
@@ -936,22 +936,25 @@
 		.contact_inner {
 			margin-top: 50px;
 			width: 100%;
+
 			.title {
 				line-height: 1.2;
 				width: 100%;
 				font-size: 140px;
 				color: rgba(255, 255, 255, 0.9);
-				margin-bottom: 30px;	
+				margin-bottom: 30px;
 
 				p {
 					font-family: 'GmarketSans';
 					font-size: 35px;
 				}
 			}
+
 			.profile {
 				width: 40%;
 				margin: 0 auto;
 				margin-bottom: 30px;
+
 				img {
 					width: 200px;
 					border-radius: 50%;
@@ -964,8 +967,9 @@
 					object-fit: cover;
 				}
 
-				
+
 			}
+
 			.link_button {
 				display: flex;
 				justify-content: space-between;
@@ -980,34 +984,36 @@
 					&:nth-child(1) {
 						background: url("../img/github.png") no-repeat center center/cover;
 					}
+
 					&:nth-child(2) {
 						background: url("../img/tistory.png") no-repeat center center/cover;
 					}
+
 					&:nth-child(3) {
 						background: url("../img/instagram.png") no-repeat center center/cover;
-					}	
+					}
 				}
-				
+
 			}
 
-			
+
 		}
 
-		
+
 	}
 
 	#webgl {
 		position: absolute;
 		left: 50%;
 		top: 50%;
-		background: radial-gradient(circle farthest-corner at center center, #07102175, #19324a7a);
+		//background: radial-gradient(circle farthest-corner at center center, #07102175, #19324a7a);
 	}
 }
 
 .sec1_text8 {
 	width: 100vw;
 	height: 100vh;
-	background: rgb(255, 255, 255);
+	background: radial-gradient(circle farthest-corner at center center, #07102175, #19324a7a);
 
 	//&::after {
 	//	content: url(/assets/img/noise.gif);
