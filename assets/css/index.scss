@@ -951,23 +951,38 @@
 			}
 
 			.profile {
-				width: 40%;
+				width: 200px;
+				height: 200px;
 				margin: 0 auto;
 				margin-bottom: 30px;
-
-				img {
-					width: 200px;
-					border-radius: 50%;
-					height: 200px;
-				}
-
-				video {
-					width: 100%;
+				perspective: 1100px;
+				.card {
+					width: 100%; 
+					height: 100%; 
+					position: relative;
+					transition: all 0.4s ease-in-out;
+					transform-style: preserve-3d;
+				  }
+				.front, .back {
+					position: absolute;
+					width: 100%; 
 					height: 100%;
-					object-fit: cover;
+					border-radius: 50%;
+					backface-visibility: hidden;
+				  }
+
+				.front {
+					background: url(../img/profile.jpg) no-repeat center center/cover;
+					
 				}
+				.back {
+					background: url(../img/29-4.jpg) no-repeat center center/cover;
+					transform: rotateY(180deg);
 
-
+				}
+				&:hover .card{
+					transform: rotateY(180deg);
+				}
 			}
 
 			.link_button {
